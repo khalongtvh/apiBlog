@@ -14,7 +14,7 @@ class Customer extends Model
         'phone_customer',
         'address_customer',
         'email_customer',
-        'city_customer',
+        'city_customer',    
     ];
     // protected $primaryKey = 'id';
     protected $table = 'customer';
