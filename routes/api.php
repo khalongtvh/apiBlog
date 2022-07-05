@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Api\v1\CustomerController as v1_CustomerController;
 use App\Http\Controllers\Api\v2\CustomerController as v2_CustomerController;
+use App\Http\Controllers\HomeController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -19,6 +20,8 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::get('/', [HomeController::class, 'index']);
 
 //thêm tiền tố 'v1' 
 //example : http://127.0.0.1:8000/api/v1/customer

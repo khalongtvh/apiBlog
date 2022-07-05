@@ -1,12 +1,10 @@
 <?php
 
-namespace App\Http\Controllers\Api\v1;
-
-use App\Http\Controllers\Controller;
+namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class HomeController extends Controller
+class BaiVietController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -82,5 +80,11 @@ class HomeController extends Controller
     public function destroy($id)
     {
         //
+    }
+    //user
+    public function chi_tiet_bai_viet($id)
+    {
+        # code...
+        return view('User.pages.detailPost');
     }
 }
